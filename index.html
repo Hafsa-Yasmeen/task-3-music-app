@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/images/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-2 col-sm-1 col-md-3 col-lg-2 pt-3 bg-light">
+                <div class="d-flex flex-column flex-shrink-0 p-0  bg-body-tertiary">
+
+                    <span class="d-none d-md-block mb-4">
+                        <i class="bi bi-x-circle-fill text-danger"></i>
+                        <i class="bi bi-dash-circle-fill text-warning"></i>
+                        <i class="bi bi-arrow-down-right-circle-fill text-success"></i>
+                    </span>
+
+                    <ul class="nav nav-pills flex-column mb-auto pb-4 align-content-center">
+                        <li class="nav-item pt-5">
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark" aria-current="page">
+                                <i class="bi bi-house me-md-2"></i>
+                                <p class="d-none d-md-block">Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-person me-md-2"></i>
+                                <p class="d-none d-md-block">Browse</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-activity me-md-2"></i>
+                                <p class="d-none d-md-block">Album</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-broadcast-pin me-md-2"></i>
+                                <p class="d-none d-md-block">Artist</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-chat-text me-md-2"></i>
+                                <p class="d-none d-md-block">Videos</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-sun me-md-2"></i>
+                                <p class="d-none d-md-block">Recently Played</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link d-flex p-sm-1 link-dark">
+                                <i class="bi bi-gear me-md-2"></i>
+                                <p class="d-none d-md-block">Local Files</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-7 col-md-6 col-lg-6 pt-3 bg-light">
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <div class="mt-2">
+                            <nav class="navbar navbar-expand-md">
+                                <div class="container px-0">
+                                    <div>
+                                        <form class="d-flex ms-0 align-items-center">
+                                            <p class="text-muted me-2 mb-0 mb-0"> Discover </p>
+                                            <p class="text-muted me-2 mb-0"> Popular </p>
+                                            <p class="text-muted me-2 mb-0"> Latest </p>
+                                            <p class="text-muted me-2 mb-0"> Trending </p>
+
+                                            <div class="d-none d-lg-block">
+                                                <input class="form-control me-2 ms-3 bookborder" type="search"
+                                                    placeholder="Search" aria-label="Search">
+                                            </div>
+                                            <div class="ms-5 d-none d-sm-block"> <i
+                                                    class="fa-solid fa-sliders bg-primary text-white p-2 rounded-3"></i>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex align-items-center mb-2">
+                        <p class="lead fw-bold"> Popular Artists </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile1.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Makkonen </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile2.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Selina </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile3.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> 4SOS </p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile4.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Smoker </p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile5.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Industry </p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile5.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Akhon </p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile6.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Zayan </p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/profile7.jpeg" class="rounded-circle" width="40px">
+                            <p class="text-muted mb-0 custom-sm-text"> Direction </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex align-items-center mt-3 mb-2 ms-2">
+                        <p class="lead fw-bold"> Trendy Songs </p>
+                        <div class="ms-auto me-2">
+                            <button class="border-0 rounded-3 me-1">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="border-0 rounded-3">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                        <img class="img-fluid shadow-lg bookborder" src="/images/book10.jpeg" alt="">
+                        <p class="lead mb-0 mt-3 ">Stoney</p>
+                        <p class="text-muted">Post Malone</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                        <img class="img-fluid shadow-lg bookborder" src="/images/book10.jpeg" alt="">
+                        <p class="lead mb-0 mt-3">Stoney</p>
+                        <p class="text-muted">Post Malone</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                        <img class="img-fluid shadow-lg bookborder" src="/images/book10.jpeg" alt="">
+                        <p class="lead mb-0 mt-3">Stoney</p>
+                        <p class="text-muted">Post Malone</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center mt-3 mb-2 ms-2">
+                        <p class="lead fw-bold"> Recently Played </p>
+                        <div class="ms-auto me-2">
+                            <button class="border-0 rounded-3 me-1">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="border-0 rounded-3">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- col-lg-5 p-0 col-md-4 col-sm-3 -->
+                    <div class="col-12 col-sm-6">
+                        <img src="/images/starboy.jpeg" alt="" class="w-100 bookborder mb-4">
+                    </div>
+                    <!-- col-lg-7 col-md-4 col-sm-3 -->
+                    <div class="col-12 col-sm-6">
+                        <div
+                            class="d-flex align-items-start border border-2 bookborder justify-content-between p-2 mt-0">
+                            <div> <img src="images/profile1.jpeg" class="rounded-circle" width="60px"></div>
+                            <div class="mt-3"> Jenny Wilson </div>
+                            <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-start border border-2 bookborder justify-content-between p-2 mt-4">
+                            <div> <img src="images/profile1.jpeg" class="rounded-circle" width="60px"></div>
+                            <div class="mt-3"> Guy Hawkins </div>
+                            <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 d-block d-sm-none bg-light"></div>
+            <div class="col-10 col-sm-4 col-md-3 col-lg-4 pt-3 bg-light">
+                <div class="row">
+                    <div class="d-flex justify-content-between pt-4 px-sm-5">
+                        <p class=" fw-bold"> Friends Activity </p>
+                        <i class="fa-solid fa-user-group text-secondary mt-2"></i>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 px-sm-5">
+                        <div> <img src="images/profile1.jpeg" class="rounded-circle" width="50px"></div>
+                        <div class="mt-3"> Guy Hawkins </div>
+                        <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 px-sm-5">
+                        <div> <img src="images/profile2.jpeg" class="rounded-circle" width="50px"></div>
+                        <div class="mt-3"> Jenny Wilson </div>
+                        <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 px-sm-5">
+                        <div> <img src="images/profile3.jpeg" class="rounded-circle" width="50px"></div>
+                        <div class="mt-3"> Bessie Cooper </div>
+                        <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 px-sm-5">
+                        <div> <img src="images/profile4.jpeg" class="rounded-circle" width="50px"></div>
+                        <div class="mt-3"> Kathryn Murphy </div>
+                        <div> <img src="images/frequency.png" class="d-none d-md-block" width="100px"> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col pt-4 p-sm-5">
+                        <div class="card hello bg-transparent border-0">
+
+                            <img src="/images/book6.jpeg" alt="" class="album-image mx-auto img-fluid bookborder">
+                            <div class="position-absolute bottom-0 bg-light w-100 px-4"
+                                style="left:0; right:0;background-color: #ffffff96 !important;">
+                                <p class="lead fw-bold text-center m-0 my-sm-3 "> Saint-Tropaz</p>
+                                <p class="lead text-center text-sm text-muted fs-6 m-0"> Post Melone </p>
+
+
+                                <hr class="mx-auto my-2 my-sm-2" width="80%">
+
+                                <div class="row text-center mb-4 mb-sm-5">
+                                    <div class="col m-0 mt-sm-3 p-0">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </div>
+                                    <div class="col m-0 mt-sm-3 p-0">
+                                        <i class="fa-solid fa-backward"></i>
+                                    </div>
+                                    <div class="col m-0 mt-sm-3 p-0">
+                                        <i class="fa-sharp fa-solid fa-circle-pause fa-2xl"></i>
+                                    </div>
+                                    <div class="col m-0 mt-sm-3 p-0">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+                                    <div class="col m-0 mt-sm-3 p-0">
+                                        <i class="fa-solid fa-repeat"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

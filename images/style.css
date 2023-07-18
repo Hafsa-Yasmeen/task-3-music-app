@@ -1,0 +1,9 @@
+.bookborder{
+    border-radius: 1.3rem!important;
+}
+
+.custom-sm-text{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
